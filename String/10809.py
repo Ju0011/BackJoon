@@ -7,6 +7,5 @@ for i in range(len(S)):
         if S[i] == alpha[j]:
             if output[j] == -1:
                 output[j] = i
-\
 for i in range(len(output)):
     print(output[i], end=' ')
