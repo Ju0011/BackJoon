@@ -1,9 +1,13 @@
-N = int(input())
-arr = list((int, input().split()))
-cnt = 0
+n = int(input())
+data = list(map(int, input().split()))
+count = 0
 
-for i in range(len(arr)):
-    for j in range(1,i+1):
-        if arr[i] % j == 0:
-            cnt = cnt +1
+for x in data:
+    for i in range(2, x + 1):
+        if x % i == 0:
+            if x == i:
+                count += 1
 
+            break
+
+print(count)
