@@ -1,14 +1,13 @@
-array = []
 while True:
-    a = int(input())
-    if a == -1:
+    array = []
+    n = int(input())
+    if n == -1:
         break
     else:
-        for i in range(1,a):
-            if a%i == 0:
+        for i in range(1,n):
+            if n%i == 0:
                 array.append(i)
-
-
-print(array)
-# for i in range(len(array)):
-#     if
+        if sum(array) == n:
+            print(n, " = ", " + ".join(str(i) for i in array), sep="")
+        else:
+            print(n, "is NOT perfect.")
